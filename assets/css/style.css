@@ -1,0 +1,141 @@
+h1 {
+  font-family: "Homemade Apple", cursive;
+  font-weight: 1000;
+  font-size: 60px;
+  font-style: normal;
+  user-select: none;
+}
+
+h2 {
+  font-size: xx-large;
+  user-select: none;
+}
+
+a {
+  font-family: "Style Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+i {
+  font-size: 60px;
+  color: #ffb474;
+  transition: 0.5s;
+}
+
+i:hover {
+  color: #bf8758;
+}
+
+.btn-bali {
+  color: white;
+  background-color: #ffb474;
+  border-color: #ffb474;
+}
+
+.btn-bali:hover {
+  color: white;
+  background-color: #cc8f5c;
+  border-color: #bf8758
+}
+
+.btn-bali.focus,
+.btn-bali:focus {
+  color: white;
+  background-color: #cc8f5c;
+  border-color: #bf8758;
+  box-shadow: 0 0 0 .2rem rgba(255, 196, 145, .5)
+}
+
+.btn-bali.disabled,
+.btn-bali:disabled {
+  color: #fff;
+  background-color: #ffb474;
+  border-color: #ffb474;
+}
+
+.btn-bali:not(:disabled):not(.disabled).active,
+.btn-bali:not(:disabled):not(.disabled):active,
+.show>.btn-bali.dropdown-toggle {
+  color: #fff;
+  background-color: #cc8f5c;
+  border-color: #bf8758
+}
+
+.btn-bali:not(:disabled):not(.disabled).active:focus,
+.btn-bali:not(:disabled):not(.disabled):active:focus,
+.show>.btn-bali.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .2rem rgba(255, 196, 145, .5)
+}
+
+.btn-outline-bali {
+  color: #ffb474;
+  border-color: #ffb474
+}
+
+.btn-outline-bali:hover {
+  color: #fff;
+  background-color: #ffb474;
+  border-color: #ffb474
+}
+
+.btn-outline-bali.focus,
+.btn-outline-bali:focus {
+  box-shadow: 0 0 0 .2rem rgba(255, 196, 145, .5)
+}
+
+.btn-outline-bali.disabled,
+.btn-outline-bali:disabled {
+  color: #ffb474;
+  background-color: transparent
+}
+
+.btn-outline-bali:not(:disabled):not(.disabled).active,
+.btn-outline-bali:not(:disabled):not(.disabled):active,
+.show>.btn-outline-bali.dropdown-toggle {
+  color: #fff;
+  background-color: #ffb474;
+  border-color: #bf8758
+}
+
+.btn-outline-bali:not(:disabled):not(.disabled).active:focus,
+.btn-outline-bali:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-bali.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .2rem rgba(255, 196, 145, .5)
+}
+
+@media screen and (max-width: 768px) {
+
+  h2 {
+    font-size: x-large;
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: large;
+  }
+
+  i {
+    font-size: 50px;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+
+  h2 {
+    font-size: medium;
+  }
+
+  i {
+    font-size: 40px;
+  }
+
+}

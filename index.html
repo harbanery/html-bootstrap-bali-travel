@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- 
+  
+  Grid system adalah salah satu bagian layout dari Boostrap yang menggunakan teknik grid namun bersamaan dengan flexbox sehingga dapat mengatur dimensi layar secara horizontal dan vertikal menjadi lebih responsif.
+
+  Saya hampir sepenuhnya menggunakan layout frid system. Jadi, layout grid system berawal dari tag <div> dengan menggunakan class .container-fluid yang dimana berfungsi untuk meratakan lebar menjadi 100% untuk semua layar perangkat. Kemudian, saya menggunakan tag <div> dengan menggunakan class .row untuk membuat baris. Setelah itu, saya menggunakan tag <div> dengan class .col untuk membuat kolom. Setelah kolom, baru saya masukkan tag lainnya.
+
+  Pada bagian logo bali, judul, dan tulisan "Cheapest and Easier" menggunakan class .col atau kolom biasa, namun pada bagian kedua button saya menggunakan beberapa kolom untuk mengatur jarak bagian kiri dan kanan pada kedua button tersebut. Saya awali dengan class .col-xl-4 col-lg-3 col-md-2 pada bagian kiri dan kanan, yang menjelaskan bahwa ada 4 kolom untuk layar besar, 3 kolom untuk layar sedang, dan 2 kolom untuk layar kecil. Lalu yang terakhir, saya tinggal menggunakan class .col untuk masing-masing button karena class .col akan otomatis memenuhi kolom yang tersisa dan juga ukuran masing-masing button yang harus sama sehingga dapat merata ke tengah.
+  
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel to Bali</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Style+Script&display=swap"
+    rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+  <style>
+    body {
+      background:
+        linear-gradient(rgba(8, 23, 46, 0.7),
+          rgba(8, 23, 46, 0.7)),
+        url('assets/image/foto-bali.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: 100% 32%;
+    }
+
+    img {
+      max-width: 200px;
+      height: 100%;
+      padding-top: 50px;
+      pointer-events: none;
+    }
+  </style>
+</head>
+
+<body class="text-white">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <img src="assets/image/logo-bali.png" alt="Logo Bali" class="mx-auto d-block pt-5 pb-4">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h1 class="text-center pt-4 pt-sm-5">A Better way to</h1>
+        <h1 class="text-center pt-4 pt-sm-5" style="color: #ffb474;">Travel to Bali</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p class="text-center pt-3 pb-5" style="user-select: none;">Cheapest and Easier</p>
+      </div>
+    </div>
+    <div class="row pt-4">
+      <div class="col-xl-4 col-lg-3 col-md-2">
+      </div>
+      <div class="col">
+        <a class="btn btn-outline-bali d-none d-sm-block btn-block btn-lg py-3" href="about_us.html" role="button">About
+          Us</a>
+        <a class="btn btn-outline-bali d-sm-none btn-block btn-sm py-3" href="about_us.html" role="button">About Us</a>
+      </div>
+      <div class="col">
+        <a class="btn btn-bali d-none d-sm-block btn-block btn-lg py-3" href="reservation.html"
+          role="button">Reservation</a>
+        <a class="btn btn-bali d-sm-none btn-block btn-sm py-3" href="reservation.html" role="button">Reservation</a>
+      </div>
+      <div class="col-xl-4 col-lg-3 col-md-2">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
